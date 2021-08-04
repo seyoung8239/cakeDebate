@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 const Landing = () => {
+
   return (
     <View style={styles.background}>
       <Text>Landing Page</Text>
