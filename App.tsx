@@ -27,7 +27,11 @@ const App = () => {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Landing">
-          <Stack.Screen name="Landing" component={Landing} />
+          <Stack.Screen
+            name="Landing"
+            component={Landing}
+            options={{headerShown: false}}
+          />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Privacy" component={Privacy} />
           <Stack.Screen name="SetBaker" component={SetBaker} />

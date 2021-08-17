@@ -1,16 +1,34 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  view: {flex: 1, marginLeft: '5%', marginRight: '%'},
+  view: {flex: 1, marginLeft: '5%', marginRight: '5%'},
   term: {
     height: '25%',
-    backgroundColor: '#BBBBBB',
+    backgroundColor: '#CCCCCC',
+    borderRadius: 7,
     marginTop: 10,
+    marginBottom: 10,
   },
   text: {
     marginTop: 20,
     fontWeight: 'bold',
     fontSize: 30,
+  },
+  agree: {position: 'absolute', flexDirection: 'row', bottom: 5, right: 10},
+  textAgree: {fontSize: 17},
+  btnAgree: {
+    width: 14,
+    height: 14,
+    borderRadius: 14,
+    backgroundColor: '#333333',
+    top: 5,
+  },
+  btnNotAgree: {
+    width: 14,
+    height: 14,
+    borderRadius: 14,
+    borderWidth: 1,
+    top: 5,
   },
   input: {
     borderBottomWidth: 1,
@@ -18,15 +36,14 @@ export const styles = StyleSheet.create({
     fontSize: 20,
   },
   inputPhone: {
-    // marginBottom: 25,
+    flex: 1,
     fontSize: 20,
   },
   subText: {
     marginBottom: 20,
   },
   verif: {flexDirection: 'row', borderBottomWidth: 1, marginBottom: 25},
-  active: {},
-  inactive: {
+  active: {
     width: 80,
     height: 38,
     alignItems: 'center',
@@ -37,14 +54,34 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     right: 0,
   },
-  btnVerifTextActive: {},
-  btnVerifTextInactive: {
+  inactive: {
+    width: 80,
+    height: 38,
+    alignItems: 'center',
+    padding: 10,
+    borderRadius: 15,
+    borderWidth: 1,
+    borderColor: '#BBBBBB',
+    position: 'absolute',
+    right: 0,
+  },
+  btnVerifTextActive: {
     color: 'red',
     fontWeight: 'bold',
   },
-
-  btnNext: {},
-  btnNextActive: {},
+  btnVerifTextInactive: {
+    color: '#BBBBBB',
+    fontWeight: 'bold',
+  },
+  btnNextActive: {
+    width: '100%',
+    alignItems: 'center',
+    padding: 15,
+    marginTop: 20,
+    // borderWidth: 2,
+    backgroundColor: '#F55656',
+    borderRadius: 10,
+  },
   btnNextInactive: {
     width: '100%',
     alignItems: 'center',

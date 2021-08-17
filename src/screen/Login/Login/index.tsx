@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import styles from './styles';
 
@@ -8,6 +8,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 const Login = () => {
   const navigation = useNavigation();
   const handlePress = () => {
+    console.log('clicked');
     navigation.navigate('Privacy');
   };
 
@@ -15,6 +16,10 @@ const Login = () => {
     <View style={styles.view}>
       {/* <Icon name="left" size={30} style={styles.icon} /> */}
       <Text style={styles.logIn}>로그인</Text>
+      <Image
+        style={styles.image}
+        source={require('../../../asset/image/landing_main.png')}
+      />
       <View style={styles.buttons}>
         <TouchableOpacity
           onPress={handlePress}
