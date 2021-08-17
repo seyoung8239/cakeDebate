@@ -2,6 +2,9 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   view: {flex: 1, marginLeft: '5%', marginRight: '5%'},
+  icon: {
+    marginTop: 20,
+  },
   text: {
     marginTop: 20,
     fontWeight: 'bold',

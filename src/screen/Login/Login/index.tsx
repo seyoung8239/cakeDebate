@@ -11,10 +11,18 @@ const Login = () => {
     console.log('clicked');
     navigation.navigate('Privacy');
   };
+  const handlePressBack = () => {
+    navigation.goBack();
+  };
 
   return (
     <View style={styles.view}>
-      {/* <Icon name="left" size={30} style={styles.icon} /> */}
+      <Icon
+        name="left"
+        size={30}
+        style={styles.icon}
+        onPress={handlePressBack}
+      />
       <Text style={styles.logIn}>로그인</Text>
       <Image
         style={styles.image}

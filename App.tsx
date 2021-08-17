@@ -26,15 +26,26 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Landing">
+        <Stack.Navigator
+          initialRouteName="Landing"
+          screenOptions={{headerShown: false}}
+        >
+          <Stack.Screen name="Landing" component={Landing} />
           <Stack.Screen
-            name="Landing"
-            component={Landing}
-            options={{headerShown: false}}
+            name="Login"
+            component={Login}
+            options={{title: '로그인'}}
           />
-          <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="Privacy" component={Privacy} />
-          <Stack.Screen name="SetBaker" component={SetBaker} />
+          <Stack.Screen
+            name="Privacy"
+            component={Privacy}
+            options={{title: '수집동의 및 인증'}}
+          />
+          <Stack.Screen
+            name="SetBaker"
+            component={SetBaker}
+            options={{title: '제빵사 설정'}}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

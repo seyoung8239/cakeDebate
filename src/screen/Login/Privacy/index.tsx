@@ -3,6 +3,8 @@ import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {styles} from './styles';
 
+import Icon from 'react-native-vector-icons/AntDesign';
+
 export default function OpenCake() {
   const navigation = useNavigation();
   const [name, setName] = useState('');
@@ -36,6 +38,14 @@ export default function OpenCake() {
 
   return (
     <View style={styles.view}>
+      <Icon
+        name="left"
+        size={30}
+        style={styles.icon}
+        onPress={() => {
+          navigation.goBack();
+        }}
+      />
       <Text style={styles.text}>개인정보 수집동의</Text>
       <View style={styles.term}>
         <View style={styles.agree}>
